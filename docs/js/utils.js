@@ -23,6 +23,6 @@ function convertDrawingToImg() {
 }
 
 async function classifyImage(image = convertDrawingToImg()) {
-  const result = await model.classify(image);
+  const result = await model.predict(image);
   console.log(result);
 }

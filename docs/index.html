@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js"></script>
+        <script src="./js/paper.init.js"></script>
+        <script src="./js/utils.js"></script>
+    </head>
+    <body>
+        <div class="canvas">
+        <canvas height="636" style="background: white none repeat scroll 0% 0%; user-select: none; width: 512px; height: 512px;" id="drawingCanvas"></canvas>
+        </div>
+        <div id="image-container"><img id='predict-image' src="" alt="" style='display: none'></div>
+        <button id="clear-drawing">Clear drawing</button>
+        <button id="predict-drawing" onclick=classifyImage()>Predict drawing</button>
+    </body>
+</html>

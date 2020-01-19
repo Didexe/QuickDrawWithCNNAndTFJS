@@ -23,7 +23,7 @@ function convertDrawingToImg() {
 }
 
 async function classifyImage(image = convertDrawingToImg()) {
-  const tensor = tf.fromPixels(image)
+  const tensor = tf.browser.fromPixels(image)
 	.toFloat();
   const result = await model.predict(tensor);
   console.log(result);

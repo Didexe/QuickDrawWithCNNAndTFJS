@@ -2,17 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
         <script src="https://unpkg.com/@tensorflow/tfjs"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.min.js"></script>
-        <script src="./js/paper.init.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="./js/fabric.js"></script>
+        <script src="./js/categories.js"></script>
+        <!-- <script src="./js/paper.init.js"></script> -->
         <script src="./js/utils.js"></script>
     </head>
     <body>
-        <div class="canvas">
-        <canvas height="636" style="background: white none repeat scroll 0% 0%; user-select: none; width: 512px; height: 512px;" id="drawingCanvas"></canvas>
+        <div class="container">
+            <div class="content">
+                <header><h1>Draw a picture of a word from the list on the right and click predict drawing</h1></header>
+                <div class="canvas-wrapper">
+                    <canvas id="canvas" width="300" height="300" class="canvas" style="border:1px solid #b9bfc9;margin-top:25px;"></canvas>
+                </div>
+                <div class="buttons">
+                    <button id="clear-drawing" onclick=erase()>Clear drawing</button>
+                    <button id="predict-drawing" onclick=getPredictions()>Predict drawing</button>
+                </div>
+            </div>
+            <div class="loader">
+            </div>
+            <div class="words">
+            </div>
         </div>
-        <div id="image-container"><img id='predict-image' src="" alt="" style='display: none'></div>
-        <button id="clear-drawing">Clear drawing</button>
-        <button id="predict-drawing" onclick=classifyImage()>Predict drawing</button>
     </body>
 </html>

@@ -6,7 +6,7 @@ In this project I am going to use the Quick draw dataset. Quick draw is one of t
 
 Here is the application: https://didexe.github.io/quickDrawWithMobileNetAndTFJS/
 
-and the Git repo: https://github.com/Didexe/quickDrawWithMobileNetAndTFJS
+and the Git repo: https://didexe.github.io/QuickDrawWithCNNAndTFJS/
 
 link to this notebook on Google CoLab: https://colab.research.google.com/drive/163KILDrDCKGTVhiOU1nwW8MKpQjGfh0i
 

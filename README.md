@@ -4,7 +4,7 @@ My final project from the Deep Learning module, part of the AI course I took at 
 
 In this project I am going to use the Quick draw dataset. Quick draw is one of the Google's A.I. experiments - https://quickdraw.withgoogle.com I will first train the model. Then convert it to a tensorflow.js model and then I will create a web application with a canvas drawing space that will recognise the drawing using the generated model.
 
-Here is the application: https://didexe.github.io/quickDrawWithMobileNetAndTFJS/
+Here is the application: https://didexe.github.io/QuickDrawWithCNNAndTFJS/
 
 and the Git repo: https://didexe.github.io/QuickDrawWithCNNAndTFJS/
 
